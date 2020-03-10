@@ -9,3 +9,33 @@ Name=my-player
 Exec=/home/pi/my-player/start.sh
 ###############################################
 
+
+sudo ir-keytable -p all
+
+
+----------------------------------------------------
+
+begin remote
+
+  name  t
+  driver devinput
+  bits           56
+  eps            30
+  aeps          100
+
+  one             0     0
+  zero            0     0
+  pre_data_bits   8
+  pre_data       0x4
+  gap          19733
+  toggle_bit_mask 0x0
+  frequency    38000
+
+      begin codes
+          KEY_1                    0xEF0100000004E7
+          KEY_2                    0xF10100000004CF
+          KEY_3                    0xEC0100000004CF
+      end codes
+
+end remote
+
