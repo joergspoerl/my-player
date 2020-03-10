@@ -1,0 +1,11 @@
+Info's
+
+## Autostart wird in File "/home/pi/.config/autostart/my-player.desktop" konfiguriert
+
+###############################################
+[Desktop Entry]
+Type=Application
+Name=my-player
+Exec=/home/pi/my-player/start.sh
+###############################################
+
